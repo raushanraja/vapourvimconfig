@@ -1,6 +1,11 @@
 vim.g.mapleader = ' '
 vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
 
+vim.api.nvim_set_keymap('', ';', 'l', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('', 'k', 'k', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('', 'l', 'j', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('', 'j', 'h', {noremap = true, silent = true})
+
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {noremap = true})
 vim.api.nvim_set_keymap('i', 'kj', '<ESC>', {noremap = true})
 
@@ -9,10 +14,10 @@ vim.api.nvim_set_keymap('n', '<M-k>', ':resize +2<CR>', {noremap = true, silent 
 vim.api.nvim_set_keymap('n', '<M-h>', ':vertical resize -2<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<M-l>', ':vertical resize +2<CR>', {noremap = true, silent = true})
 
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {noremap = true, silent = false})
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {noremap = true, silent = false})
+vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>h', {noremap = true, silent = false})
+vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>j', {noremap = true, silent = false})
 vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {noremap = true, silent = false})
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true, silent = false})
+vim.api.nvim_set_keymap('n', '<C->', '<C-w>l', {noremap = true, silent = false})
 
 vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious<CR>', {noremap = true, silent = true})

@@ -8,10 +8,10 @@ Vapour = {
     language_servers = {
         sumneko_lua = {enabled = false},
         bashls = {enabled = false},
-        cssls = {enabled = false},
-        html = {enabled = false},
-        tsserver = {enabled = false},
-        pyright = {enabled = false},
+        cssls = {enabled = true},
+        html = {enabled = true},
+        tsserver = {enabled = true},
+        pyright = {enabled = true},
         jedi_language_server = {enabled = false},
         pylsp = {enabled = false},
         vimls = {enabled = false},
@@ -120,7 +120,7 @@ Vapour = {
     settings = {
         -- If true, :w -> :w!
         always_force_write = false,
-        colorscheme = 'onedark',
+        colorscheme = 'tokyonight',
         transparent_bg = false
     }
 }
