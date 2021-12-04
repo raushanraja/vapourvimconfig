@@ -24,7 +24,6 @@ changedirname() {
 clonerepo() {
   echo "Cloning repo..."
   git clone https://github.com/raushanraja/vapourvimconfig ~/.config/nvim
-  nvim +PackerSync
 }
 
 which nvim >/dev/null && echo "Neovim is installed" || warnnvim
