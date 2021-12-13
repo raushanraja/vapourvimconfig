@@ -100,12 +100,12 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagn
 })
 
 if Vapour.language_servers.html.enabled then
-    local configs = require 'lspconfig/configs'
+    local configs = require 'lspconfig.configs'
 
-    if not lspconfig.ls_emmet then
-        configs.ls_emmet = {
+    if not lspconfig.emmet_ls then
+        configs.emmet_ls = {
             default_config = {
-                cmd = {'ls_emmet', '--stdio'},
+                cmd = {'emmet-ls', '--stdio'},
                 filetypes = {'html', 'css'},
                 root_dir = function(_)
                     return vim.loop.cwd()
@@ -114,5 +114,5 @@ if Vapour.language_servers.html.enabled then
             }
         }
     end
-    lspconfig.ls_emmet.setup {capabilities = capabilities}
+    lspconfig.emmet_ls.setup {capabilities = capabilities}
 end
