@@ -21,7 +21,7 @@ local mappings = {
         n = {'<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', "Go to next diagnostic"},
         N = {'<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', "Go to previous diagnostic"}
     },
-    x = {":bdelete<cr>", "Close Buffer"},
+    x = {":bp<bar>sp<bar>bn<bar>bd<CR>", "Close Buffer"},
     X = {":bdelete!<cr>", "Force Close Buffer"},
     q = {":q<cr>", "Quit"},
     Q = {":q!<cr>", "Force Quit"},
