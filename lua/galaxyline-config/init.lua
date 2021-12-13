@@ -167,6 +167,23 @@ gls.left[6] = {DiagnosticWarn = {provider = 'DiagnosticWarn', icon = '  ', hi
 
 gls.left[7] = {DiagnosticInfo = {provider = 'DiagnosticInfo', icon = '  ', highlight = {colors.blue, colors.black}}}
 
+
+
+
+gls.mid[1] = {
+    Time = {
+        provider = function()
+            return os.date("%H:%M %S %a, %d %b %y")
+            -- return os.date("%Y-%m-%dT%H:%M")
+        end,
+        -- condition = function()
+        --   return vim.fn.col('.')
+        -- end,
+        highlight = {colors.white, colors.black, 'bold'}
+    }
+}
+
+
 -- Git stuff on the right side
 
 gls.right[1] = {
