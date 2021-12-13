@@ -144,17 +144,6 @@ gls.left[1] = {
     }
 }
 
-gls.left[2] = {
-    NameText = {
-        provider = function()
-            return 'VapourNvim '
-        end,
-        highlight = {colors.white, colors.black, 'bold'},
-        separator = separators.bRight,
-        separator_highlight = {colors.lightbg, colors.black}
-    }
-}
-
 gls.left[3] = {
     FileIcon = {
         provider = 'FileIcon',
@@ -164,7 +153,7 @@ gls.left[3] = {
 }
 gls.left[4] = {
     FileName = {
-        provider = 'FileName',
+        provider = {'FileName', 'FileSize'},
         condition = buffer_not_empty,
         highlight = {colors.white, colors.lightbg},
         separator = separators.uLeft,
@@ -240,7 +229,7 @@ gls.right[7] = {
 
 gls.right[8] = {
     PerCent = {
-        provider = 'LinePercent',
+        provider = {'LineColumn','LinePercent'},
         separator = separators.bRight,
         separator_highlight = {colors.yellow, colors.blue},
         highlight = {colors.black, colors.yellow}

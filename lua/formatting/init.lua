@@ -24,7 +24,7 @@ require"format".setup {
         {
             cmd = {
                 function(file)
-                    return string.format("autopep8 --in-place --aggressive --aggressive %s", file)
+                    return string.format("autopep8 --in-place --max-line-length 120 --aggressive %s", file)
                 end
             },
             tempfile_postfix = ".tmp"
