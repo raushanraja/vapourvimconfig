@@ -92,7 +92,7 @@ Vapour = {
             enabled = true,
             sources = {
                 {name = 'cmp_tabnine'}, {name = 'nvim_lsp'}, {name = 'vsnip'}, {name = 'buffer'}, {name = 'omni'},
-                {name = "dictionary", keyword_length = 2}
+                -- {name = "dictionary", keyword_length = 2}
             }
         },
         which_key = {user_defined = {}},
